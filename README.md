@@ -8,14 +8,13 @@ The notebook sends tabular data (e.g. portfolio holdings, fundamentals, business
 - Which sectors have the highest allocations in the portfolio?
 - What are the top 3 performing companies?
 - What companies are most similar to Alibaba based on their business description?
-- Are there any patterns among the strong performers?
-
 The model responds with a concise summary based solely on the data provided.
 
 ## How It Works
 
 - The `ask_fininsights()` function formats the DataFrame and prompt.
 - A request is made to the OpenAI API via `requests.post()` using the Chat Completions endpoint.
+- Prompting styles explored include zero-shot, role-based, few-shot, and structured reasoning.
 - Proxy support is included for use behind a firewall.
 
 ## Example Output
